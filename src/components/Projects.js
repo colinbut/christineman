@@ -9,6 +9,7 @@ import Card from '@material-ui/core/Card'
 import CardActionArea from '@material-ui/core/CardActionArea'
 import CardMedia from '@material-ui/core/CardMedia'
 import CardContent from '@material-ui/core/CardContent'
+import Footer from '../components/Footer'
 
 const useStyles = makeStyles({
     media: {
@@ -17,88 +18,72 @@ const useStyles = makeStyles({
     }
 })
 
+const projectData = [
+    {
+        id: 1,
+        name: "HKPC Academy",
+        image: CeramicsImg,
+        title: "Ceramics"
+    },
+    {
+        id: 2,
+        name: "5 Past Watches",
+        image: WatchesImg,
+        title: "Watches"
+    },
+    {
+        id: 3,
+        name: "HKPC Academy",
+        image: CeramicsImg,
+        title: "Ceramics"
+    },
+    {
+        id: 4,
+        name: "5 Past Watches",
+        image: WatchesImg,
+        title: "Watches"
+    },
+    {
+        id: 5,
+        name: "HKPC Academy",
+        image: CeramicsImg,
+        title: "Ceramics"
+    },
+    {
+        id: 6,
+        name: "5 Past Watches",
+        image: WatchesImg,
+        title: "Watches"
+    }
+]
+
 const Projects = () => {
     const classes = useStyles();
     let { url } = useRouteMatch();
-    console.log(CeramicsImg);
+    // console.log(CeramicsImg);
+
+    const projectList = projectData.map((item, key) => 
+        <Grid item xs={6}>
+            <Link to={`${url}/${item.id}`}>
+                <Card square={true}>
+                    <CardActionArea>
+                        <CardMedia className={classes.media} image={item.image} title={item.title}/>
+                        <CardContent>
+                            { item.name }
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Link>
+        </Grid>
+    );
 
     return (
         <div>
-            <Grid container spacing={8}>
-                <Grid item xs={6}>
-                    <Link to={`${url}/project1`}>
-                        <Card>
-                            <CardActionArea>
-                                <CardMedia className={classes.media} image={CeramicsImg} title="Ceramics"/>
-                                <CardContent>
-                                    HKPC Academy
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Link>
-                </Grid>
-                <Grid item xs={6}>
-                    <Link to={`${url}/project2`}>
-                        <Card>
-                            <CardActionArea>
-                                <CardMedia className={classes.media} image={WatchesImg} title="Watches"/>
-                                <CardContent>
-                                    5 Past Watches
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Link>
-                </Grid>
-                <Grid item xs={6}>
-                    <Link to={`${url}/project1`}>
-                        <Card>
-                            <CardActionArea>
-                                <CardMedia className={classes.media} image={CeramicsImg} title="Ceramics"/>
-                                <CardContent>
-                                    HKPC Academy
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Link>
-                </Grid>
-                <Grid item xs={6}>
-                    <Link to={`${url}/project2`}>
-                        <Card>
-                            <CardActionArea>
-                                <CardMedia className={classes.media} image={WatchesImg} title="Watches"/>
-                                <CardContent>
-                                    5 Past Watches
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Link>
-                </Grid>
-                <Grid item xs={6}>
-                    <Link to={`${url}/project1`}>
-                        <Card>
-                            <CardActionArea>
-                                <CardMedia className={classes.media} image={CeramicsImg} title="Ceramics"/>
-                                <CardContent>
-                                    HKPC Academy
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Link>
-                </Grid>
-                <Grid item xs={6}>
-                    <Link to={`${url}/project2`}>
-                        <Card>
-                            <CardActionArea>
-                                <CardMedia className={classes.media} image={WatchesImg} title="Watches"/>
-                                <CardContent>
-                                    5 Past Watches
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Link>
-                </Grid>
+            <Grid container spacing={10}>
+                { projectList }
             </Grid>
             <Description />
+            <Footer />
         </div>
     )
 }

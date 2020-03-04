@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.announcement-header {
+  width: 100%;
+  border: 1px solid red;
+  height: 100px;
+}
+
+/* .nav {
+  float: left;
+} */
+
+ul {
+  list-style: none;
+}
+
+a, li {
+  text-decoration: none;
+}
+
+.nav-menu-item {
+  width: 20%;
+  float: left;
+}
