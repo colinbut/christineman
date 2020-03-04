@@ -44,7 +44,7 @@ const AnnouncementHeader = () => {
 const SiteHeader = () => {
     return (
         <div>
-            <NavLink to="/" className="site-title">Hollie Beuamount</NavLink>
+            <NavLink to="/" className="site-title">Christine Man</NavLink>
         </div>
     )
 }

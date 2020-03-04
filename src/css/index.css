@@ -30,6 +30,10 @@ code {
   width: 50%;
 }
 
+.site-title {
+  font-weight: bold;
+}
+
 .description-link {
   font-size: 32px;
   font-style: normal;
@@ -64,4 +68,8 @@ li {
   width: 15%;
   float: left;
   color: black;
+}
+
+.about-page-container-wrapper {
+  width: 40%;
 }
