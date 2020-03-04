@@ -4,6 +4,7 @@ import Projects from './Projects'
 import About from './About'
 import Contact from './Contact'
 import Project from './Project'
+import Footer from './Footer'
 import { BrowserRouter as Router, Switch, Route, Link, NavLink, Redirect } from 'react-router-dom'
 
 export default function Application() {
@@ -24,8 +25,8 @@ export default function Application() {
                         <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
-
-                <Switch>
+            </div>
+            <Switch>
                     <Route path="/projects/:id" component={Project}/>
                     <Route path="/projects" component={Projects}/>
                     <Route path="/about" component={About}/>
@@ -34,7 +35,6 @@ export default function Application() {
                         <Redirect to="/projects"/>
                     </Route>
                 </Switch>
-            </div>
         </Router>
     )
 }
