@@ -1,7 +1,10 @@
 import React from 'react'
-import ReactDOM from 'react-dom';
 import './index.css';
-import { BrowserRouter as Router, Switch, Route, Link, useParams, useRouteMatch } from 'react-router-dom'
+import Projects from './Projects'
+import About from './About'
+import Contact from './Contact'
+import Project from './Project'
+import { BrowserRouter as Router, Switch, Route, Link, NavLink, Redirect } from 'react-router-dom'
 
 export default function Application() {
     return (
@@ -9,10 +12,10 @@ export default function Application() {
             <div>
                 <ul>
                     <li>
-                        <Link to="/">Home</Link>
+                        <NavLink to="/">Home</NavLink>
                     </li>
                     <li>
-                        <Link to="/projects">Projects</Link>
+                        <NavLink to="/projects">Projects</NavLink>
                     </li>
                     <li>
                         <Link to="/about">About</Link>
@@ -23,17 +26,12 @@ export default function Application() {
                 </ul>
 
                 <Switch>
+                    <Route path="/projects/:id" component={Project}/>
+                    <Route path="/projects" component={Projects}/>
+                    <Route path="/about" component={About}/>
+                    <Route path="/contact" component={Contact}/>
                     <Route exact path="/">
-                        <Home/>
-                    </Route>
-                    <Route path="/projects">
-                        <Projects/>
-                    </Route>
-                    <Route path="/about">
-                        <About/>
-                    </Route>
-                    <Route path="/contact">
-                        <Contact/>
+                        <Redirect to="/projects"/>
                     </Route>
                 </Switch>
             </div>
@@ -41,34 +39,4 @@ export default function Application() {
     )
 }
 
-function Home() {
-    return (
-        <div>
-            <h1>Home</h1>
-        </div>
-    )
-}
 
-function Projects() {
-    return (
-        <div>
-            <h1>Projects</h1>
-        </div>
-    )
-}
-
-function About() {
-    return (
-        <div>
-            <h1>About</h1>
-        </div>
-    )
-}
-
-function Contact() {
-    return (
-        <div>
-            <h1>Contact</h1>
-        </div>
-    )
-}
