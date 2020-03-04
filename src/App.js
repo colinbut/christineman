@@ -5,7 +5,7 @@ import About from './About'
 import Contact from './Contact'
 import Project from './Project'
 import Footer from './Footer'
-import { BrowserRouter as Router, Switch, Route, Link, NavLink, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, NavLink, Redirect } from 'react-router-dom'
 
 export default function Application() {
     return (
@@ -19,22 +19,22 @@ export default function Application() {
                         <NavLink to="/projects">Projects</NavLink>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <NavLink to="/about">About</NavLink>
                     </li>
                     <li>
-                        <Link to="/contact">Contact</Link>
+                        <NavLink to="/contact">Contact</NavLink>
                     </li>
                 </ul>
             </div>
             <Switch>
-                    <Route path="/projects/:id" component={Project}/>
-                    <Route path="/projects" component={Projects}/>
-                    <Route path="/about" component={About}/>
-                    <Route path="/contact" component={Contact}/>
-                    <Route exact path="/">
-                        <Redirect to="/projects"/>
-                    </Route>
-                </Switch>
+                <Route path="/projects/:id" component={Project}/>
+                <Route path="/projects" component={Projects}/>
+                <Route path="/about" component={About}/>
+                <Route path="/contact" component={Contact}/>
+                <Route exact path="/">
+                    <Redirect to="/projects"/>
+                </Route>
+            </Switch>
         </Router>
     )
 }
