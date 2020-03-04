@@ -10,11 +10,16 @@ import CardActionArea from '@material-ui/core/CardActionArea'
 import CardMedia from '@material-ui/core/CardMedia'
 import CardContent from '@material-ui/core/CardContent'
 import Footer from '../components/Footer'
+import { NavLink } from 'react-router-dom'
 
 const useStyles = makeStyles({
+    root: {
+        fontSize: '21px',
+        textAlign: 'left'
+    },
     media: {
         // height: 354.38
-        minHeight: 354.38
+        minHeight: 500.38
     }
 })
 
@@ -64,11 +69,11 @@ const Projects = () => {
 
     const projectList = projectData.map((item, key) => 
         <Grid item xs={6}>
-            <Link to={`${url}/${item.id}`}>
+            <Link to={`${url}/${item.id}`} onClick={clicked_UpdateState}>
                 <Card square={true}>
                     <CardActionArea>
                         <CardMedia className={classes.media} image={item.image} title={item.title}/>
-                        <CardContent>
+                        <CardContent className={classes.root}>
                             { item.name }
                         </CardContent>
                     </CardActionArea>
@@ -91,11 +96,20 @@ const Projects = () => {
 const Description = () => {
     return (
         <div>
-            <p>
-                Hollie Beaumont is a photographer and art director based in London. She shoots a diverse range of subjects for commercial and editorial clients, all with a clean and elegant aesthetic.
+            <h3 className="description">
+                Hollie Beaumont is a photographer and art director based in London. 
+                She shoots a diverse range of subjects for commercial and editorial clients, all with a clean and elegant 
+                aesthetic.
+            </h3>
+            <p className="description-link">
+                <NavLink to="/contact" className="description-link">Let's work together.</NavLink>
             </p>
         </div>
     )
+}
+
+function clicked_UpdateState() {
+    console.log("Clicked!")
 }
 
 export default Projects

@@ -12,25 +12,56 @@ code {
     monospace;
 }
 
-.announcement-header {
-  width: 100%;
-  border: 1px solid red;
-  height: 100px;
+.container {
+  width: 90%;
+  padding: 30px;
+  margin: 0 auto;
 }
 
-/* .nav {
-  float: left;
-} */
+.announcement-header {
+  width: 100%;
+  height: 150px;
+}
+
+.description, .site-title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  width: 50%;
+}
+
+.description-link {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  width: 50%;
+  border-bottom: 1px solid black;
+}
+
 
 ul {
   list-style: none;
+  /* float: left; */
+  /* text-align: right; */
 }
+
+a {color:black;}         /* Unvisited link  */
+a:visited {color:black;} /* Visited link    */
+a:hover {color:black;}   /* Mouse over link */
+a:active {color:black;}  /* Selected link   */
 
 a, li {
   text-decoration: none;
+  text-align: center;
+  display: inline;
+}
+
+li {
+  cursor: pointer;
 }
 
 .nav-menu-item {
-  width: 20%;
+  width: 15%;
   float: left;
+  color: black;
 }
