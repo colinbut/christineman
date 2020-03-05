@@ -34,12 +34,20 @@ code {
   font-weight: bold;
 }
 
+a.site-title.active {
+  border-bottom: 2px solid white;
+}
+
 .description-link {
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   width: 50%;
   border-bottom: 1px solid black;
+}
+
+.active {
+  border-bottom: 2px solid black;
 }
 
 
@@ -72,4 +80,37 @@ li {
 
 .about-page-container-wrapper {
   width: 40%;
+}
+
+.contact-page-container-wrapper {
+  width: 40%;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+}
+
+textarea {
+  width: 100%;
+  height: 110px;
+}
+
+.submit-button {
+  width: 110px;
+  height: 60px;
+  border: 2px solid black;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+}
+
+.submit-button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.follow {
+  padding: 70px 0;
 }

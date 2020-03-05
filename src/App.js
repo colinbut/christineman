@@ -54,13 +54,13 @@ const NavMenu = () => {
         <div className="nav">
             <ul>
                 <li className="nav-menu-item">
-                    <NavLink to="/projects">Projects</NavLink>
+                    <NavLink to="/projects" activeClassName="active">Projects</NavLink>
                 </li>
                 <li className="nav-menu-item">
-                    <NavLink to="/about">About</NavLink>
+                    <NavLink to="/about" activeClassName="active">About</NavLink>
                 </li>
                 <li className="nav-menu-item">
-                    <NavLink to="/contact">Contact</NavLink>
+                    <NavLink to="/contact" activeClassName="active">Contact</NavLink>
                 </li>
             </ul>
         </div>

@@ -27,7 +27,7 @@ const Project = (props) => {
             <h1>Project Title</h1>
             <p>Project Description</p>
             <Grid container spacing={1}>
-                <Grid item xs={6}>
+                <Grid item xs={12}>
                     <Card square={true}>
                         <CardActionArea>
                             <CardMedia className={classes.media} image={_project.image} title={_project.title}/>
