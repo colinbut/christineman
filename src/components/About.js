@@ -7,11 +7,10 @@ import data from '../config/about.json'
 export default function About() {
     return (
         <div className="about-page-container-wrapper">
-            <h1></h1>
             <h1>{data.heading}</h1>
             <p><em>{data.subHeading}</em></p>
             <p>{data.summary}</p>
-            <Grid container spacing={10}>
+            <Grid container spacing={5}>
                 <Grid item xs={6}>
                     <h2>Services</h2>
                     <p>{data.services}</p>

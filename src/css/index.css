@@ -38,12 +38,13 @@ a.site-title.active {
   border-bottom: 2px solid white;
 }
 
-.description-link {
+p.description-link {
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   width: 50%;
-  border-bottom: 1px solid black;
+  text-align: left;
+  text-decoration: underline;
 }
 
 .active {
@@ -114,3 +115,14 @@ textarea {
 .follow {
   padding: 70px 0;
 }
+
+.error {
+  border: 1px solid red;
+}
+
+/* .footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+} */

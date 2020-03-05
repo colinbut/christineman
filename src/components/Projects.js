@@ -65,11 +65,10 @@ const projectData = [
 const Projects = () => {
     const classes = useStyles();
     let { url } = useRouteMatch();
-    // console.log(CeramicsImg);
 
     const projectList = projectData.map((item, key) => 
         <Grid item xs={6}>
-            <Link to={`${url}/${item.id}`} onClick={clicked_UpdateState}>
+            <Link to={`${url}/${item.id}`}>
                 <Card square={true}>
                     <CardActionArea>
                         <CardMedia className={classes.media} image={item.image} title={item.title}/>
@@ -101,15 +100,13 @@ const Description = () => {
                 She shoots a diverse range of subjects for commercial and editorial clients, all with a clean and elegant 
                 aesthetic.
             </h3>
-            <p className="description-link">
-                <NavLink to="/contact" className="description-link">Let's work together.</NavLink>
-            </p>
+            <div className="link">
+            <NavLink to="/contact">
+                <p className="description-link">Let's work together.</p>
+            </NavLink>
+            </div>
         </div>
     )
-}
-
-function clicked_UpdateState() {
-    console.log("Clicked!")
 }
 
 export default Projects
