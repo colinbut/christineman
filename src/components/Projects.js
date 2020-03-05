@@ -4,6 +4,8 @@ import { Link, useRouteMatch } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles'
 import CeramicsImg from '../img/ceramics.jpg'
 import WatchesImg from '../img/watches.jpg'
+import HKPC from '../img/HKPC.jpeg'
+import HKPC_Portfolio from '../img/HKPC_Portfolio.jpeg'
 import Grid from '@material-ui/core/Grid'
 import Card from '@material-ui/core/Card'
 import CardActionArea from '@material-ui/core/CardActionArea'
@@ -27,7 +29,7 @@ const projectData = [
     {
         id: 1,
         name: "HKPC Academy",
-        image: CeramicsImg,
+        image: HKPC,
         title: "Ceramics"
     },
     {
@@ -39,7 +41,7 @@ const projectData = [
     {
         id: 3,
         name: "HKPC Academy",
-        image: CeramicsImg,
+        image: HKPC,
         title: "Ceramics"
     },
     {
@@ -51,7 +53,7 @@ const projectData = [
     {
         id: 5,
         name: "HKPC Academy",
-        image: CeramicsImg,
+        image: HKPC,
         title: "Ceramics"
     },
     {

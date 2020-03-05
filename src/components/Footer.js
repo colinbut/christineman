@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <div className="footer">
             <strong>Copyright</strong>
-            <p>{copyright.text}</p>
+            <p>&copy; {copyright.text}</p>
         </div>
     )
 }
