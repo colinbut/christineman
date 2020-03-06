@@ -6,6 +6,9 @@ import Grid from '@material-ui/core/Grid'
 import Card from '@material-ui/core/Card'
 import CardActionArea from '@material-ui/core/CardActionArea'
 import CardMedia from '@material-ui/core/CardMedia'
+import NextArrow from './ui/NextArrow';
+import PreviousArrow from './ui/PreviousArrow'
+import ArrowButton from './ui/ArrowButton'
 
 const useStyles = makeStyles({
     media: {
@@ -19,7 +22,8 @@ const Project = (props) => {
     const projectData = []
 
     let _project = {
-        id: 0
+        id: 0,
+        title: "Test"
     }
 
     return (
@@ -38,10 +42,10 @@ const Project = (props) => {
             <p>Project Closing Note</p>
             <div id="project-catalog-nav">
                 {_project.id !== 0 && 
-                    <button name="">Previous Project Title</button>
+                    <ArrowButton buttonText={_project.title} ArrowButton={<PreviousArrow/>} />
                 }
                 {_project.id !== projectData.length - 1 && 
-                    <button name="">Next Project Title</button>
+                    <ArrowButton buttonText={_project.title} ArrowButton={<NextArrow/>} />
                 }
             </div>
             <Footer/>
