@@ -120,6 +120,15 @@ textarea {
   border: 1px solid red;
 }
 
+.arrow-button {
+  width: 200px;
+}
+
+.arrow-button-text {
+  text-align: right;
+  font-size: 32px;
+}
+
 /* .footer {
   position: absolute;
   left: 0;
