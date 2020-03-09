@@ -41,7 +41,19 @@
                 "title": "Watches"
             }
         ],
-        "description":"Hollie Beaumont is a photographer and art director based in London. She shoots a diverse range of subjects for commercial and editorial clients, all with a clean and elegant aesthetic."
+        "description":"Hollie Beaumont is a photographer and art director based in London. She shoots a diverse range of subjects for commercial and editorial clients, all with a clean and elegant aesthetic.",
+        "projectList": [
+            {
+                "id": 1,
+                "title": "HKPC",
+                "summary": "Summary",
+                "gallery": [
+                    "HKPC.jpeg",
+                    "HKPC_Portfolio.jpeg"
+                ],
+                "closing_note": "Test"
+            }
+        ]
     },
     "about": {
         "heading": "UI & UX Designer",

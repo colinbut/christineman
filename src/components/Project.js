@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../css/index.css';
 import { makeStyles } from '@material-ui/core/styles'
 import Footer from './Footer'
@@ -9,6 +9,8 @@ import CardMedia from '@material-ui/core/CardMedia'
 import NextArrow from './ui/NextArrow';
 import PreviousArrow from './ui/PreviousArrow'
 import ArrowButton from './ui/ArrowButton'
+import DataContext from '../state/DataContext'
+import { useRouteMatch, NavLink } from 'react-router-dom'
 
 const useStyles = makeStyles({
     media: {
@@ -17,40 +19,76 @@ const useStyles = makeStyles({
     }
 })
 
-const Project = (props) => {
-    const classes = useStyles();
-    const projectData = []
 
-    let _project = {
-        id: 0,
-        title: "Test"
+const Project = () => {
+    const context = useContext(DataContext)
+    let { url } = useRouteMatch();
+    console.log('The Context', context)
+    
+    let projectId = url.slice(url.length - 1)
+    let projects = context.projects.projectList
+    let projectClicked = {}
+
+    for (let projectIndex in projects) {
+        let project = projects[projectIndex]
+        if (project.id == projectId) {
+            projectClicked = project
+        }
     }
+    console.log(projectClicked)
 
+    const classes = useStyles()
+    
+    let projectNavData = {
+        title: context.projects.projectData[0].title,
+        id: 0,
+        numberOfProjects: context.projects.projectData.length
+    }
+    
     return (
         <div>
-            <h1>Project Title</h1>
-            <p>Project Description</p>
+            <h1>{projectClicked.title}</h1>
+            <p>{projectClicked.summary}</p>
             <Grid container spacing={1}>
                 <Grid item xs={12}>
                     <Card square={true}>
                         <CardActionArea>
-                            <CardMedia className={classes.media} image={_project.image} title={_project.title}/>
+                            <ProjectGallery images={projectClicked.gallery} classes={classes} />
                         </CardActionArea>
                     </Card>
                 </Grid>
             </Grid>
-            <p>Project Closing Note</p>
-            <div id="project-catalog-nav">
-                {_project.id !== 0 && 
-                    <ArrowButton buttonText={_project.title} ArrowButton={<PreviousArrow/>} />
-                }
-                {_project.id !== projectData.length - 1 && 
-                    <ArrowButton buttonText={_project.title} ArrowButton={<NextArrow/>} />
-                }
-            </div>
+            <p>{projectClicked.closing_note}</p>
+            <ProjectNavigation data={projectNavData} />
             <Footer/>
         </div>
-        
+    )
+}
+
+const ProjectGallery = (props) => {
+    return (
+        props.images.map((item, key) =>
+            <CardMedia className={props.classes.media} image={process.env.PUBLIC_URL + "/img/" + item}/>
+        )
+    )
+}
+
+
+const ProjectNavigation = (props) => {
+    let data = props.data
+    return (
+        <div id="project-catalog-nav">
+            {data.id !== 0 && 
+                <NavLink to="/contact">
+                    <ArrowButton buttonText={data.title} ArrowButton={<PreviousArrow/>} />
+                </NavLink>
+            }
+            {data.id !== data.numberOfProjects && 
+                <NavLink to="/contact">
+                    <ArrowButton buttonText={data.title} ArrowButton={<NextArrow/>} />
+                </NavLink>
+            }
+        </div>
     )
 }
 

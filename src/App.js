@@ -7,24 +7,26 @@ import Project from './components/Project'
 import Grid from '@material-ui/core/Grid'
 import data from './config/static.json'
 import { BrowserRouter as Router, Switch, Route, NavLink, Redirect } from 'react-router-dom'
-
+import MyProvider from './state/MyProvider'
 
 export default function Application() {
     return (
-        <Router>
-            <div className="container">
-            <AnnouncementHeader />
-            <Switch>
-                <Route path="/projects/:id" component={Project}/>
-                <Route path="/projects" component={Projects}/>
-                <Route path="/about" component={About}/>
-                <Route path="/contact" component={Contact}/>
-                <Route exact path="/">
-                    <Redirect to="/projects"/>
-                </Route>
-            </Switch>
-            </div>
-        </Router>
+        <MyProvider>
+            <Router>
+                <div className="container">
+                <AnnouncementHeader />
+                <Switch>
+                    <Route path="/projects/:id" component={Project}/>
+                    <Route path="/projects" component={Projects}/>
+                    <Route path="/about" component={About}/>
+                    <Route path="/contact" component={Contact}/>
+                    <Route exact path="/">
+                        <Redirect to="/projects"/>
+                    </Route>
+                </Switch>
+                </div>
+            </Router>
+        </MyProvider>
     )
 }
 
