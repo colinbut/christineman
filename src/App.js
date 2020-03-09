@@ -5,7 +5,9 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Project from './components/Project'
 import Grid from '@material-ui/core/Grid'
+import data from './config/static.json'
 import { BrowserRouter as Router, Switch, Route, NavLink, Redirect } from 'react-router-dom'
+
 
 export default function Application() {
     return (
@@ -44,7 +46,7 @@ const AnnouncementHeader = () => {
 const SiteHeader = () => {
     return (
         <div>
-            <NavLink to="/" className="site-title">Christine Man</NavLink>
+            <NavLink to="/" className="site-title">{data.homepage.site_title}</NavLink>
         </div>
     )
 }
