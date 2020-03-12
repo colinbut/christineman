@@ -2,10 +2,11 @@ import React from 'react'
 import '../css/index.css';
 import Footer from './Footer'
 import Grid from '@material-ui/core/Grid'
-import data from '../config/static.json'
+import DataContext from '../state/DataContext'
 
-export default function About() {
-    const about = data.about
+const About = () => {
+    const context = React.useContext(DataContext)
+    const about = context.about
     return (
         <div className="about-page-container-wrapper">
             <h1>{about.heading}</h1>
@@ -25,3 +26,5 @@ export default function About() {
         </div>
     )
 }
+
+export default About

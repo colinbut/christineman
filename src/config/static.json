@@ -45,6 +45,7 @@
         "projectList": [
             {
                 "id": 1,
+                "link_title": "HKPC",
                 "title": "HKPC",
                 "summary": "Summary",
                 "gallery": [
@@ -52,6 +53,79 @@
                     "HKPC_Portfolio.jpeg"
                 ],
                 "closing_note": "Test"
+            },
+            {
+                "id": 2,
+                "title": "Watches",
+                "link_title": "Watches",
+                "summary": "Summary",
+                "gallery": [
+                    "watches.jpg",
+                    "HKPC_Portfolio.jpeg"
+                ],
+                "closing_note": "Test"
+            },
+            {
+                "id": 3,
+                "link_title": "Sun-Kissed Summer",
+                "title": "Sun-Kissed Summer - Lipstick Art Exhibition",
+                "summary": "Harbour City presented the first lipstick tasting bar in Hong Kong for all shoppers to have an opportunity to try on over 30 different brands of lipsticks. In collaboration with an American lipstick artist - “Lipstick Lex”, we have merged some of her key design elements into our design. \nThe event has successfully raise the public awareness with over many shoppers participated both the interactive psychological test and personalised lipstick sticker. Television Broadcasts, online resources, and local magazines have also reported on this event.",
+                "gallery": [
+                    "sun_kissed_summer/sunkissed1.jpg",
+                    "sun_kissed_summer/sunkissed2.jpg",
+                    "sun_kissed_summer/sunkissed3.jpg",
+                    "sun_kissed_summer/sunkissed4.jpg",
+                    "sun_kissed_summer/sunkissed5.jpg",
+                    "sun_kissed_summer/sunkissed6.jpg"
+                ],
+                "closing_note": ""
+            },
+            {
+                "id": 4,
+                "link_title": "Summer Adventure Kingdom",
+                "title": "Summer Adventure Kingdom - World Cup",
+                "summary": "2018 World Cup is getting close! The shopping malls of Cheung Kong Industrial Estate, Lai Chi Kok Yu Ching Estate, Hung Hom Harbour Plaza, Ho Man Tin Estate, and Tsim Sha Tsui Harbour View Shopping Centre host a series of exciting activities in the summer. \nWith the theme of tropical forests, the elephant explorer, the greedy lion king and the hippo leader led a group of children into the summer forest, and experienced different experiences through the five senses of sight, hearing, smell, taste and touch. Fantasy forest journey!",
+                "gallery": [
+                    "summer_adventure_kingdom/summerAdvKingdom1.jpg",
+                    "summer_adventure_kingdom/summerAdvKingdom2.jpg",
+                    "summer_adventure_kingdom/summerAdvKingdom3.jpg",
+                    "summer_adventure_kingdom/summerAdvKingdom4.jpg"
+                ],
+                "closing_note": ""
+            },
+            {
+                "id": 5,
+                "link_title": "Christmas Dream Castle",
+                "title": "2018 Christmas Event",
+                "summary": "This Christmas, Tai Po Mega Mall, New Jade Shopping Arcade and Yuen Long Plaza has collaborated with a well-known French illustrator, Marie Desbons. The main characters from the illustrator’s book have been brought to life in a Christmas ball scene and dressed up in gorgeous costumes. An incredible stage, huge Christmas tree and the main character have create a dreamy and magnificent French ball to celebrate Christmas with us. \nWhat’s more, an interactive painting game was designed to further enhance the entire event.",
+                "gallery": [
+                    "christmas_dream_castle/christmas-dream-castle1.jpg",
+                    "christmas_dream_castle/christmas-dream-castle2.jpg",
+                    "christmas_dream_castle/christmas-dream-castle3.jpg",
+                    "christmas_dream_castle/christmas-dream-castle4.jpg",
+                    "christmas_dream_castle/christmas-dream-castle5.png",
+                    "christmas_dream_castle/christmas-dream-castle6.jpg",
+                    "christmas_dream_castle/christmas-dream-castle7.jpg"
+                ],
+                "closing_note": ""
+            },
+            {
+                "id": 6,
+                "link_title": "Garden of Fortune",
+                "title": "2019 Lunar New Year Event",
+                "summary": "Dedicated to providing memorable and engaging experiences for guests, ifc mall has presented a splendid installation featuring pinwheels to welcome good fortune and celebrating the Year of the Pig. \nThis year, ifc mall has collaborated with young local calligrapher, Rite Lee, to create a downloadable “fai chuns” for guests to share with family and friends after completing the game. \nPinwheel embody the meaning of luck and fortune in Chinese belief. Let’s embrace the good fortune tightly and welcome the year of 2019. ",
+                "gallery": [
+                    "garden_of_fortune/garden-of-fortune1.jpg",
+                    "garden_of_fortune/garden-of-fortune2.jpg",
+                    "garden_of_fortune/garden-of-fortune3.jpg",
+                    "garden_of_fortune/garden-of-fortune4.jpg",
+                    "garden_of_fortune/garden-of-fortune5.jpg",
+                    "garden_of_fortune/garden-of-fortune6.jpg",
+                    "garden_of_fortune/garden-of-fortune7.jpg",
+                    "garden_of_fortune/garden-of-fortune8.1.png",
+                    "garden_of_fortune/garden-of-fortune8.2.png"
+                ],
+                "closing_note": ""
             }
         ]
     },

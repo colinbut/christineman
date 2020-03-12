@@ -23,7 +23,6 @@ const useStyles = makeStyles({
 const Project = () => {
     const context = useContext(DataContext)
     let { url } = useRouteMatch();
-    console.log('The Context', context)
     
     let projectId = url.slice(url.length - 1)
     let projects = context.projects.projectList
@@ -38,11 +37,10 @@ const Project = () => {
     console.log(projectClicked)
 
     const classes = useStyles()
-    
-    let projectNavData = {
-        title: context.projects.projectData[0].title,
-        id: 0,
-        numberOfProjects: context.projects.projectData.length
+
+    const projectNavData = {
+        projects: projects,
+        clickedProjectId: parseInt(projectId)
     }
     
     return (
@@ -75,17 +73,22 @@ const ProjectGallery = (props) => {
 
 
 const ProjectNavigation = (props) => {
-    let data = props.data
+    let projects = props.data.projects
+    let clickedProjectId = props.data.clickedProjectId
+    let numberOfProjects = projects.length
+    let previousProjectId = clickedProjectId - 1 
+    let nextProjectId = clickedProjectId + 1
     return (
         <div id="project-catalog-nav">
-            {data.id !== 0 && 
-                <NavLink to="/contact">
-                    <ArrowButton buttonText={data.title} ArrowButton={<PreviousArrow/>} />
+            {previousProjectId !== 0 && 
+                <NavLink to={`/projects/${previousProjectId}`}>
+                    // this is clearly a hack!
+                    <ArrowButton buttonText={projects[previousProjectId - 1].link_title} ArrowButton={<PreviousArrow/>} />
                 </NavLink>
             }
-            {data.id !== data.numberOfProjects && 
-                <NavLink to="/contact">
-                    <ArrowButton buttonText={data.title} ArrowButton={<NextArrow/>} />
+            {nextProjectId <= numberOfProjects && 
+                <NavLink to={`/projects/${nextProjectId}`}>
+                    <ArrowButton buttonText={projects[nextProjectId - 1].link_title} ArrowButton={<NextArrow/>} />
                 </NavLink>
             }
         </div>

@@ -26,17 +26,17 @@ const Projects = () => {
     const context = useContext(DataContext)
     const classes = useStyles();
     let { url } = useRouteMatch();
-    const projectData = context.projects.projectData
-    const projectList = projectData.map((item, key) => 
+    const projectList = context.projects.projectList
+    const projects = projectList.map((item, key) => 
         <Grid item xs={6}>
             <Link to={`${url}/${item.id}`}>
                 <Card square={true}>
                     <CardActionArea>
                         <CardMedia className={classes.media} 
-                            image={process.env.PUBLIC_URL + '/img/' + item.image} 
-                            title={item.title}/>
+                            image={process.env.PUBLIC_URL + '/img/' + item.gallery[0]} 
+                            title={item.link_title}/>
                         <CardContent className={classes.root}>
-                            { item.name }
+                            { item.link_title }
                         </CardContent>
                     </CardActionArea>
                 </Card>
@@ -47,7 +47,7 @@ const Projects = () => {
     return (
         <div>
             <Grid container spacing={10}>
-                { projectList }
+                { projects }
             </Grid>
             <Description data={context.projects} />
             <Footer />
