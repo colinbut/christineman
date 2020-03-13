@@ -3,67 +3,29 @@
         "site_title": "Christine Man1"
     },
     "projects": {
-        "projectData": [
-            {
-                "id": 1,
-                "name": "HKPC Academy",
-                "image": "HKPC.jpeg",
-                "title": "Ceramics"
-            },
-            {
-                "id": 2,
-                "name": "5 Past Watches",
-                "image": "watches.jpg",
-                "title": "Watches"
-            },
-            {
-                "id": 3,
-                "name": "HKPC Academy",
-                "image": "HKPC.jpeg",
-                "title": "Ceramics"
-            },
-            {
-                "id": 4,
-                "name": "5 Past Watches",
-                "image": "watches.jpg",
-                "title": "Watches"
-            },
-            {
-                "id": 5,
-                "name": "HKPC Academy",
-                "image": "HKPC.jpeg",
-                "title": "Ceramics"
-            },
-            {
-                "id": 6,
-                "name": "5 Past Watches",
-                "image": "watches.jpg",
-                "title": "Watches"
-            }
-        ],
         "description":"Hollie Beaumont is a photographer and art director based in London. She shoots a diverse range of subjects for commercial and editorial clients, all with a clean and elegant aesthetic.",
         "projectList": [
             {
                 "id": 1,
                 "link_title": "HKPC",
                 "title": "HKPC",
-                "summary": "Summary",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Labore et dolore magna aliqua. Id leo in vitae turpis. Arcu cursus vitae congue mauris. Risus at ultrices mi tempus imperdiet. Scelerisque felis imperdiet proin fermentum leo vel orci. Velit euismod in pellentesque massa placerat duis. Enim nunc faucibus a pellentesque sit amet porttitor eget. Volutpat blandit aliquam etiam erat velit scelerisque in",
                 "gallery": [
                     "HKPC.jpeg",
                     "HKPC_Portfolio.jpeg"
                 ],
-                "closing_note": "Test"
+                "closing_note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Labore et dolore magna aliqua. Id leo in vitae turpis. Arcu cursus vitae congue mauris. Risus at ultrices mi tempus imperdiet. Scelerisque felis imperdiet proin fermentum leo vel orci. Velit euismod in pellentesque massa placerat duis. Enim nunc faucibus a pellentesque sit amet porttitor eget. Volutpat blandit aliquam etiam erat velit scelerisque in."
             },
             {
                 "id": 2,
                 "title": "Watches",
                 "link_title": "Watches",
-                "summary": "Summary",
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Labore et dolore magna aliqua. Id leo in vitae turpis. Arcu cursus vitae congue mauris. Risus at ultrices mi tempus imperdiet. Scelerisque felis imperdiet proin fermentum leo vel orci. Velit euismod in pellentesque massa placerat duis. Enim nunc faucibus a pellentesque sit amet porttitor eget. Volutpat blandit aliquam etiam erat velit scelerisque in",
                 "gallery": [
                     "watches.jpg",
                     "HKPC_Portfolio.jpeg"
                 ],
-                "closing_note": "Test"
+                "closing_note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Labore et dolore magna aliqua. Id leo in vitae turpis. Arcu cursus vitae congue mauris. Risus at ultrices mi tempus imperdiet. Scelerisque felis imperdiet proin fermentum leo vel orci. Velit euismod in pellentesque massa placerat duis. Enim nunc faucibus a pellentesque sit amet porttitor eget. Volutpat blandit aliquam etiam erat velit scelerisque in."
             },
             {
                 "id": 3,
@@ -78,7 +40,7 @@
                     "sun_kissed_summer/sunkissed5.jpg",
                     "sun_kissed_summer/sunkissed6.jpg"
                 ],
-                "closing_note": ""
+                "closing_note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Labore et dolore magna aliqua. Id leo in vitae turpis. Arcu cursus vitae congue mauris. Risus at ultrices mi tempus imperdiet. Scelerisque felis imperdiet proin fermentum leo vel orci. Velit euismod in pellentesque massa placerat duis. Enim nunc faucibus a pellentesque sit amet porttitor eget. Volutpat blandit aliquam etiam erat velit scelerisque in."
             },
             {
                 "id": 4,
@@ -91,7 +53,7 @@
                     "summer_adventure_kingdom/summerAdvKingdom3.jpg",
                     "summer_adventure_kingdom/summerAdvKingdom4.jpg"
                 ],
-                "closing_note": ""
+                "closing_note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Labore et dolore magna aliqua. Id leo in vitae turpis. Arcu cursus vitae congue mauris. Risus at ultrices mi tempus imperdiet. Scelerisque felis imperdiet proin fermentum leo vel orci. Velit euismod in pellentesque massa placerat duis. Enim nunc faucibus a pellentesque sit amet porttitor eget. Volutpat blandit aliquam etiam erat velit scelerisque in."
             },
             {
                 "id": 5,
@@ -107,7 +69,7 @@
                     "christmas_dream_castle/christmas-dream-castle6.jpg",
                     "christmas_dream_castle/christmas-dream-castle7.jpg"
                 ],
-                "closing_note": ""
+                "closing_note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Labore et dolore magna aliqua. Id leo in vitae turpis. Arcu cursus vitae congue mauris. Risus at ultrices mi tempus imperdiet. Scelerisque felis imperdiet proin fermentum leo vel orci. Velit euismod in pellentesque massa placerat duis. Enim nunc faucibus a pellentesque sit amet porttitor eget. Volutpat blandit aliquam etiam erat velit scelerisque in."
             },
             {
                 "id": 6,
@@ -125,7 +87,7 @@
                     "garden_of_fortune/garden-of-fortune8.1.png",
                     "garden_of_fortune/garden-of-fortune8.2.png"
                 ],
-                "closing_note": ""
+                "closing_note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Labore et dolore magna aliqua. Id leo in vitae turpis. Arcu cursus vitae congue mauris. Risus at ultrices mi tempus imperdiet. Scelerisque felis imperdiet proin fermentum leo vel orci. Velit euismod in pellentesque massa placerat duis. Enim nunc faucibus a pellentesque sit amet porttitor eget. Volutpat blandit aliquam etiam erat velit scelerisque in."
             }
         ]
     },

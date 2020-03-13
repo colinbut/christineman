@@ -10,18 +10,19 @@ const About = () => {
     return (
         <div className="about-page-container-wrapper">
             <h1>{about.heading}</h1>
-            <p><em>{about.subHeading}</em></p>
-            <p>{about.summary}</p>
+            <p className="text-spacing"><em>{about.subHeading}</em></p>
+            <p className="text-spacing">{about.summary}</p>
             <Grid container spacing={5}>
                 <Grid item xs={6}>
                     <h2>Services</h2>
-                    <p>{about.services}</p>
+                    <p className="text-spacing">{about.services}</p>
                 </Grid>
                 <Grid item xs={6}>
                     <h2>Clients</h2>
-                    <p>{about.clients}</p>
+                    <p className="text-spacing">{about.clients}</p>
                 </Grid>
             </Grid>
+            <div className="additional-description"></div>
             <Footer />
         </div>
     )

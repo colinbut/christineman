@@ -73,6 +73,10 @@ li {
   cursor: pointer;
 }
 
+.nav {
+  text-align: right;
+}
+
 .nav-menu-item {
   width: 15%;
   float: left;
@@ -121,17 +125,59 @@ textarea {
 }
 
 .arrow-button {
-  width: 200px;
+  width: 100%;
+  height: 200px;
 }
 
-.arrow-button-text {
+.right-button-text {
   text-align: right;
   font-size: 32px;
+  padding: 0;
+  margin: 0;
 }
 
-/* .footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.left-button-text {
+  text-align: left;
+  font-size: 32px;
+  padding: 0;
+  margin: 0;
+}
+
+.left-icon {
+  text-align: left;
+  vertical-align: middle;
+}
+
+.project-title {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.project-summary {
+  height: 200px;
+  font-weight: 400;
+  font-size: 19px;
+  width: 50%;
+}
+
+.project-gallery {
   width: 100%;
-} */
+  min-height: 800px;
+  padding-bottom: 50px;
+}
+
+.closing-note {
+  height: 200px;
+  font-weight: 400;
+  font-size: 19px;
+  width: 40%;
+}
+
+.text-spacing {
+  letter-spacing: 0.1em;
+  word-spacing: 0.2em;
+}
+
+.additional-description {
+  height: 200px;
+}
