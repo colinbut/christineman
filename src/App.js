@@ -8,14 +8,15 @@ import Grid from '@material-ui/core/Grid'
 import { BrowserRouter as Router, Switch, Route, NavLink, Redirect } from 'react-router-dom'
 import MyProvider from './state/MyProvider'
 import DataContext from './state/DataContext'
-import ScrollToTop from 'react-router-scroll-top'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import ScrollToTop from './components/utils/ScrollToTop';
 
 export default function Application() {
     return (
         <MyProvider>
             <Router>
                 <ScrollToTop>
-                <div className="container">
+                <div className="container-custom">
                     <AnnouncementHeader />
                     <Switch>
                         <Route path="/projects/:id" component={Project}/>
@@ -46,6 +47,10 @@ const AnnouncementHeader = () => {
             </Grid>
         </div>
     )
+}
+
+function handleScroll() {
+    console.log('scrolled')
 }
 
 const SiteHeader = () => {
