@@ -14,7 +14,7 @@ import ScrollToTop from './components/utils/ScrollToTop';
 export default function Application() {
     return (
         <MyProvider>
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
                 <ScrollToTop>
                 <div className="container-custom">
                     <AnnouncementHeader />
