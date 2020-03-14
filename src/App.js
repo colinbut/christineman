@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import ScrollToTop from './components/utils/ScrollToTop';
 
 export default function Application() {
+    console.log(process.env.PUBLIC_URL)
     return (
         <MyProvider>
             <Router basename={process.env.PUBLIC_URL}>

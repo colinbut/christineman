@@ -30,7 +30,7 @@ const Projects = () => {
     const projects = projectList.map((item, key) => 
         <Grid item xs={6}>
             <Link className="anchor-item-link" to={`${url}/${item.project_url}`}>
-                <Card square={true}>
+                <Card square={true} style={{boxShadow: "none"}}>
                     <CardActionArea>
                         <CardMedia className={classes.media} 
                             image={process.env.PUBLIC_URL + '/img/' + item.gallery[0]} 
