@@ -11,7 +11,7 @@ const NextButton = (props) => {
                 <Grid item xs={11}>
                     <p className="right-button-text">{ buttonText }</p>
                 </Grid>
-                <Grid item xs={1}>
+                <Grid item xs={1} className="project-nav-right-parent">
                     <NextArrow />
                 </Grid>
             </Grid>

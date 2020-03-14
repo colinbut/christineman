@@ -165,7 +165,20 @@ textarea {
 
 .left-icon {
   text-align: left;
-  vertical-align: middle;
+  padding: 15% 0;
+}
+
+.project-nav-left-parent {
+  padding: 5% 0;
+}
+
+.right-icon {
+  text-align: right;
+  padding: 15% 0;
+}
+
+.project-nav-right-parent {
+  padding: 5% 0;
 }
 
 .project-title {
@@ -207,3 +220,5 @@ textarea {
 .additional-description {
   height: 200px;
 }
+
+

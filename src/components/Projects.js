@@ -61,7 +61,7 @@ const Description = (props) => {
         <div>
             <h3 className="description">{projects.description}</h3>
             <div className="link">
-                <NavLink to="/contact">
+                <NavLink to="/contact" className="anchor-item-link">
                     <p className="description-link">Let's work together.</p>
                 </NavLink>
             </div>

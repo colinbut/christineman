@@ -8,7 +8,7 @@ const PreviousButton = (props) => {
     return (
         <div className="arrow-button">
             <Grid container spacing={1}>
-                <Grid item xs={1}>
+                <Grid item xs={1} className="project-nav-left-parent">
                     <PreviousArrow />
                 </Grid>
                 <Grid item xs={11}>
