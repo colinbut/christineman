@@ -53,7 +53,7 @@ const SiteHeader = () => {
     const context = useContext(DataContext)
     return (
         <div>
-            <NavLink to="/" className="site-title">{context.homepage.site_title}</NavLink>
+            <NavLink to="/" className="site-title anchor-item-link">{context.homepage.site_title}</NavLink>
         </div>
     )
 }

@@ -29,7 +29,7 @@ const Projects = () => {
     const projectList = context.projects.projectList
     const projects = projectList.map((item, key) => 
         <Grid item xs={6}>
-            <Link className="anchor-item-link" to={`${url}/${item.id}`}>
+            <Link className="anchor-item-link" to={`${url}/${item.project_url}`}>
                 <Card square={true}>
                     <CardActionArea>
                         <CardMedia className={classes.media} 

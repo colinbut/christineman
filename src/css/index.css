@@ -44,6 +44,7 @@ code {
 }
 
 .site-title {
+  color: black;
   font-weight: bold;
 }
 
@@ -147,6 +148,7 @@ textarea {
 .arrow-button {
   width: 100%;
   height: 200px;
+  color: black;
 }
 
 .right-button-text {
