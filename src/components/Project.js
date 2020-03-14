@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import '../css/index.css';
-import { makeStyles } from '@material-ui/core/styles'
 import Footer from './Footer'
 import Grid from '@material-ui/core/Grid'
 import NextButton from './ui/NextButton'
@@ -70,7 +69,7 @@ const ProjectNavigation = (props) => {
             <Grid container spacing={1}>
                 <Grid item xs={6}>
                     {previousProjectId !== 0 && 
-                        <NavLink to={`/projects/${previousProjectId}`}>
+                        <NavLink className="anchor-item-link" to={`/projects/${previousProjectId}`}>
                             {/* // this is clearly a hack! */}
                             <PreviousButton buttonText={projects[previousProjectId - 1].link_title} />
                         </NavLink>
@@ -78,7 +77,7 @@ const ProjectNavigation = (props) => {
                 </Grid>
                 <Grid item xs={6}>
                     {nextProjectId <= numberOfProjects && 
-                        <NavLink to={`/projects/${nextProjectId}`}>
+                        <NavLink className="anchor-item-link" to={`/projects/${nextProjectId}`}>
                             <NextButton buttonText={projects[nextProjectId - 1].link_title} />
                         </NavLink>
                     }

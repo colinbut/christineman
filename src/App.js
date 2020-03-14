@@ -49,10 +49,6 @@ const AnnouncementHeader = () => {
     )
 }
 
-function handleScroll() {
-    console.log('scrolled')
-}
-
 const SiteHeader = () => {
     const context = useContext(DataContext)
     return (
@@ -67,13 +63,13 @@ const NavMenu = () => {
         <div className="nav">
             <Grid container spacing={1}>
                 <Grid item xs={4}>
-                    <NavLink to="/projects" activeClassName="active">Projects</NavLink>
+                    <NavLink to="/projects" activeClassName="active" className="anchor-item-link">Projects</NavLink>
                 </Grid>
                 <Grid item xs={4}>
-                    <NavLink to="/about" activeClassName="active">About</NavLink>
+                    <NavLink to="/about" activeClassName="active" className="anchor-item-link">About</NavLink>
                 </Grid>
                 <Grid item xs={4}>
-                    <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+                    <NavLink to="/contact" activeClassName="active" className="anchor-item-link">Contact</NavLink>
                 </Grid>
             </Grid>
         </div>

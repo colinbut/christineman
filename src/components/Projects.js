@@ -29,7 +29,7 @@ const Projects = () => {
     const projectList = context.projects.projectList
     const projects = projectList.map((item, key) => 
         <Grid item xs={6}>
-            <Link to={`${url}/${item.id}`}>
+            <Link className="anchor-item-link" to={`${url}/${item.id}`}>
                 <Card square={true}>
                     <CardActionArea>
                         <CardMedia className={classes.media} 
@@ -61,9 +61,9 @@ const Description = (props) => {
         <div>
             <h3 className="description">{projects.description}</h3>
             <div className="link">
-            <NavLink to="/contact">
-                <p className="description-link">Let's work together.</p>
-            </NavLink>
+                <NavLink to="/contact">
+                    <p className="description-link">Let's work together.</p>
+                </NavLink>
             </div>
         </div>
     )
