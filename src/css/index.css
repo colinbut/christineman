@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.container {
+.container-custom {
   width: 90%;
   padding: 30px;
   margin: 0 auto;
@@ -20,10 +20,23 @@ code {
 
 .announcement-header {
   width: 100%;
+  /* overflow: hidden; */
   height: 150px;
+  /* position: fixed; /* Set the navbar to fixed position */
+  /* top: 0; Position the navbar at the top of the page */
+  /* width: 100%; Full width */
 }
 
-.description, .site-title {
+.description {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  width: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.site-title {
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -51,26 +64,28 @@ p.description-link {
   border-bottom: 2px solid black;
 }
 
-
-ul {
-  list-style: none;
-  /* float: left; */
-  /* text-align: right; */
-}
-
 a {color:black;}         /* Unvisited link  */
 a:visited {color:black;} /* Visited link    */
-a:hover {color:black;}   /* Mouse over link */
+a:hover {color:black;text-decoration: none;}   /* Mouse over link */
 a:active {color:black;}  /* Selected link   */
 
-a, li {
+a {
   text-decoration: none;
   text-align: center;
   display: inline;
 }
 
-li {
-  cursor: pointer;
+a:hover.anchor-item-link {
+  color: black;
+  text-decoration: none;
+}
+
+a.follow-link {
+  color: black;
+  text-decoration: underline;
+}
+a:hover.follow-link {
+  color: black;
 }
 
 .nav {
@@ -91,6 +106,10 @@ li {
   width: 40%;
 }
 
+h2.contact-form-heading {
+  padding-bottom: 30px;
+}
+
 input {
   width: 100%;
   height: 30px;
@@ -108,6 +127,7 @@ textarea {
   text-align: center;
   vertical-align: middle;
   line-height: 60px;
+  background-color: white;
 }
 
 .submit-button:hover {
@@ -158,6 +178,7 @@ textarea {
   font-weight: 400;
   font-size: 19px;
   width: 50%;
+  margin-bottom: 30px;
 }
 
 .project-gallery {
@@ -171,6 +192,11 @@ textarea {
   font-weight: 400;
   font-size: 19px;
   width: 40%;
+  margin-bottom: 30px;
+}
+
+.vertical-spacing {
+  margin-bottom: 30px;
 }
 
 .text-spacing {
