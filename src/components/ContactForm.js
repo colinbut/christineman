@@ -3,9 +3,8 @@ import '../css/index.css';
 import SubmitButton from './ui/SubmitButton'
 import Form from 'react-bootstrap/Form'
 import Col from 'react-bootstrap/Col'
-import { Formik, withFormik } from 'formik'
+import { Formik } from 'formik'
 import * as Yup from 'yup' 
-import Button from 'react-bootstrap/Button'
 
 const schema = Yup.object({
     firstName: Yup.string().required(),
@@ -88,7 +87,7 @@ const ContactFormWrapper = () => {
                             <Form.Control as="textarea" rows="8" required />
                         </Form.Group>
                     </Form.Row>
-                    <Button type="submit" onClick={submitForm}>Submit</Button>
+                    <SubmitButton buttonText="Submit" submitForm={submitForm}/>
                 </Form>
                 )}
                 </Formik>
