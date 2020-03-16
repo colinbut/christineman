@@ -1,13 +1,13 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import '../css/index.css';
-import data from '../config/static.json'
+import DataContext from '../state/DataContext'
 
 export default function Footer() {
-    const copyright = data.copyright
+    const context = useContext(DataContext)
     return (
-        <div className="footer">
+        <footer className="footer">
             <strong>Copyright</strong>
-            <p>&copy; {copyright.text}</p>
-        </div>
+            <p>&copy; {context.copyright.text}</p>
+        </footer>
     )
 }
